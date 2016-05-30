@@ -776,6 +776,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "TestMVC.controller.settings.CountryList": [],
   "TestMVC.model.Country": [],
   "TestMVC.model.Guest": [],
+  "TestMVC.model.User": [],
   "TestMVC.store.Countries": [],
   "TestMVC.store.Guests": [],
   "TestMVC.view.AboutPanel": [],
@@ -1740,6 +1741,7 @@ Ext.ClassManager.addNameAliasMappings({
   "TestMVC.controller.settings.CountryList": [],
   "TestMVC.model.Country": [],
   "TestMVC.model.Guest": [],
+  "TestMVC.model.User": [],
   "TestMVC.store.Countries": [],
   "TestMVC.store.Guests": [],
   "TestMVC.view.AboutPanel": [
@@ -1749,7 +1751,7 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.guestpanel"
   ],
   "TestMVC.view.LoginForm": [
-    "widget.loginpanel"
+    "widget.loginform"
   ],
   "TestMVC.view.Main": [
     "widget.main"

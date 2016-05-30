@@ -22,7 +22,8 @@ Ext.application({
 
     models: [
         'Guest',
-        'Country'
+        'Country',
+        'User'
     ],
 
     stores: [
@@ -68,9 +69,9 @@ Ext.application({
         Ext.Msg.defaultAllowedConfig.hideAnimation = Ext.os.is.iOS ? true : false;
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('TestMVC.view.Main'));
+        //Ext.Viewport.add(Ext.create('TestMVC.view.Main'));
         // TEST
-        //Ext.Viewport.add(Ext.create('TestMVC.view.LoginForm'));
+        Ext.Viewport.add(Ext.create('TestMVC.view.LoginForm'));
     },
 
     onUpdated: function() {
