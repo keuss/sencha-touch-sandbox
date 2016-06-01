@@ -4,6 +4,8 @@ Ext.define('TestMVC.view.LoginForm', {
   xtype: 'loginform',
 
   config: {
+    // custom props
+    myProp: undefined,
     scrollable: 'vertical',
     styleHtmlContent: true,
     listeners: {
@@ -38,6 +40,16 @@ Ext.define('TestMVC.view.LoginForm', {
       ].join('')
     }]
 
-  }
+  },
+  initialize: function() {
 
+    // test custom props
+    console.log('initialize loginform', this.config.myProp);
+    console.log('initialize loginform', this.getMyProp());
+
+    this.add({
+      xclass: 'Ext.Container',
+      html: this.getMyProp()
+    });
+  }
 });

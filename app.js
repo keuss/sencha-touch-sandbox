@@ -71,7 +71,9 @@ Ext.application({
         // Initialize the main view
         //Ext.Viewport.add(Ext.create('TestMVC.view.Main'));
         // TEST
-        Ext.Viewport.add(Ext.create('TestMVC.view.LoginForm'));
+        Ext.Viewport.add(Ext.create('TestMVC.view.LoginForm', {
+          myProp: 'keuss'
+        }));
     },
 
     onUpdated: function() {
