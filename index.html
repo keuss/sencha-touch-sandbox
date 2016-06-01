@@ -54,9 +54,13 @@
 </head>
 <body>
   <script>
-    dataLayer = [{
-      'pageCategory': 'index html'
+    var dataLayer = [{
+      'virtualPageURL' : 'Page TEST GGA'
     }];
+    dataLayer.push({
+      'event':'VirtualPageview',
+      'virtualPageURL':'/maPage/step1'
+    });
   </script>
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WB72WL"
